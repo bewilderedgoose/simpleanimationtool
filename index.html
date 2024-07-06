@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Animation Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="gif.js"></script> <!-- Include gif.js library here -->
+</head>
+<body>
+    <div id="animation-container">
+        <canvas id="animation-canvas" width="800" height="600"></canvas>
+        <div id="controls">
+            <input type="file" id="file-input" multiple>
+            <button id="play-button">Play</button>
+            <button id="stop-button">Stop</button>
+            <label for="frame-rate">Frame Rate (fps): <span id="frame-rate-value">24</span></label>
+            <input type="range" id="frame-rate" min="1" max="60" value="24">
+            <label for="frame-delay">Frame Delay (ms): <span id="frame-delay-value">41.67</span></label>
+            <input type="range" id="frame-delay" min="16" max="1000" value="41.67">
+            <button id="download-button">Download Animation</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
